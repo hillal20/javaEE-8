@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.PrePersist;
 
 @Entity
 public class ToDo {
@@ -22,7 +23,10 @@ public class ToDo {
 	private LocalDate datedCompleted;
 	
 	
-	
+	@PrePersist
+	private void init() {
+		setDateCreated(LocalDate.now());
+	}
 	
 	public Long getId() {
 		return Id;
