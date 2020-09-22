@@ -1,0 +1,4 @@
+entity\ToDo.class
+rest\ToDoController.class
+service\TodoService.class
+rest\ToDoRest.class

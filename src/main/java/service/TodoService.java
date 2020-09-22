@@ -41,7 +41,9 @@ public class TodoService {
 	// get list of all the todo`s 
 	public List<ToDo > getAllToDo(){
 		
-		 return entityManager.createQuery("select t from ToDO t", ToDo.class).getResultList();
+		 return entityManager
+				 .createQuery("select t from ToDO t", ToDo.class)
+				 .getResultList();
 	}
 	
 	

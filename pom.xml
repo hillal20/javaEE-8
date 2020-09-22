@@ -12,6 +12,7 @@
             <version>8.0</version>
             <scope>provided</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.eclipse.microprofile</groupId>
             <artifactId>microprofile</artifactId>
@@ -19,15 +20,7 @@
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
-        
-        <!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink -->
-   <dependency>
-      <groupId>org.eclipse.persistence</groupId>
-      <artifactId>eclipselink</artifactId>
-      <version>2.7.5</version>
-     </dependency>
-        
-        
+  
         
     </dependencies>
     <build>
