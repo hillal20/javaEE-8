@@ -2,6 +2,8 @@ package entity;
 
 import java.time.LocalDate;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.json.bind.annotation.JsonbDateFormat;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -37,7 +39,17 @@ public class ToDo {
 	private LocalDate datedCompleted;
 	
 	
-	@PrePersist
+	@PostConstruct // callback hook 
+	private void print() {
+		System.out.println("==== post construct hook =====");
+	}
+	
+	@PreDestroy // callback hook
+	private void printS() {
+		System.out.println("==== pre destroy  hook =====");
+	}
+	
+	@PrePersist // callback hook 
 	private void init() {
 		setDateCreated(LocalDate.now());
 	}

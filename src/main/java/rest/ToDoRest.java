@@ -15,6 +15,11 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import entity.ToDo;
+import scope.ApplicationScopeClass;
+import scope.ConversationScopeClass;
+import scope.DependentScopeClass;
+import scope.RequestScopeClass;
+import scope.SessionScopeClass;
 import service.TodoService;
 
 @Path("todo")
@@ -24,6 +29,25 @@ public class ToDoRest {
 	
 	@Inject 
 	TodoService toDoService;
+	
+	// contextual scoped instances 
+	@Inject 
+	ApplicationScopeClass appScopeClass;
+	@Inject 
+	ConversationScopeClass conversationScopeClass;
+	@Inject
+	DependentScopeClass dependentScopeClass;
+	@Inject 
+	RequestScopeClass requestScopeClass;
+	@Inject 
+	SessionScopeClass sessionScopeClass;
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	@Path("new")
@@ -79,6 +103,16 @@ public class ToDoRest {
 		return Response.ok(toDo).build();
 	}
 	
+	@Path("getScope")
+	@GET
+	public void  getAllScopes() {
+		
+	 System.out.println(appScopeClass.getHash() + " " +  appScopeClass.hashCode());
+	 System.out.println(sessionScopeClass.getHash() + " " +sessionScopeClass.hashCode());
+	 System.out.println(requestScopeClass.getHash() + " " + requestScopeClass.hashCode());
+	 System.out.println(dependentScopeClass.getHash() + " " +  dependentScopeClass.hashCode());
+	 System.out.println(conversationScopeClass.getHash() + " " + conversationScopeClass.hashCode());
 	
+	}
 
 }
