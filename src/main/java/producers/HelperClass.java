@@ -26,7 +26,6 @@ public class HelperClass {
 	public List<String> getMyList;
 	
 	public void showLoging() {
-		
 		System.out.println(" logging ====> "+ loging );
 		System.out.println(" getMyList ====> "+ getMyList );
 	}

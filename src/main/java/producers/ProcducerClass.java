@@ -46,8 +46,7 @@ public class ProcducerClass {
 	
 	
 	@Produces
-	//@Police // we annotate it with police to make the salute return as police 
-	public Salute getSalution() { // salute is an interface 
+	public Salute getSalution() { // salute is an interface which get implemented by police and a solder
 		
 		return new Police(); // police is a call implementation of the interface salute
 	}

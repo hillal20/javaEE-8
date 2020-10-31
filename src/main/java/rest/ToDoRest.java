@@ -23,7 +23,7 @@ import scope.DependentScopeClass;
 import scope.RequestScopeClass;
 import scope.SessionScopeClass;
 import service.TodoService;
-
+import interceptors.MyInterceptor;
 @Path("todo")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
@@ -45,11 +45,11 @@ public class ToDoRest {
 	SessionScopeClass sessionScopeClass;
 	
 	
-	@Inject // injecting a bean list  by the CDI 
+	@Inject // injecting a  list which is a return of a function bean invoked   by the CDI 
 	private List<String> getMyList;
 	
 	@Inject 
-	@Police //  Injecting   a return of a  bean function 
+	@Police //  Injecting  an object  which is a return of a  bean function invoked by the CDI 
 	private Salute getSalution;
 	
 	
@@ -129,7 +129,7 @@ public class ToDoRest {
 	 
 	}
 	
-	
+	@MyInterceptor
 	@Path("getPolice")
 	@GET
 	public void  getPloice() {		
