@@ -15,6 +15,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import entity.ToDo;
+import qualifiers.Salute;
+import qualifiers.annotations.Police;
 import scope.ApplicationScopeClass;
 import scope.ConversationScopeClass;
 import scope.DependentScopeClass;
@@ -43,8 +45,12 @@ public class ToDoRest {
 	SessionScopeClass sessionScopeClass;
 	
 	
+	@Inject // injecting a bean list  by the CDI 
+	private List<String> getMyList;
 	
-	
+	@Inject 
+	@Police //  Injecting   a return of a  bean function 
+	private Salute getSalution;
 	
 	
 	
@@ -115,4 +121,19 @@ public class ToDoRest {
 	
 	}
 
+	
+	@Path("getMyBook")
+	@GET
+	public void  getMyBook() {		
+	 System.out.println("==== My book ====>: " + getMyList.get(1) );
+	 
+	}
+	
+	
+	@Path("getPolice")
+	@GET
+	public void  getPloice() {		
+	 System.out.println("==== My police ====>: " + getSalution.salute("hello") );
+	 
+	}
 }

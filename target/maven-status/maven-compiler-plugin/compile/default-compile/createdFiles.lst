@@ -7,6 +7,7 @@ qualifiers\Salute.class
 qualifiers\annotations\ServiceMan$ServiceType.class
 rest\ToDoRest.class
 service\TodoService.class
+producers\ProcducerClass.class
 qualifiers\Police.class
 scope\SessionScopeClass.class
 qualifiers\annotations\StereoTypeClass.class
@@ -14,5 +15,6 @@ scope\DependentScopeClass.class
 qualifiers\annotations\Police.class
 scope\RequestScopeClass.class
 qualifiers\annotations\ServiceMan.class
+producers\HelperClass.class
 qualifiers\Security.class
 qualifiers\Soldier.class
