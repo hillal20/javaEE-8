@@ -10,12 +10,12 @@ import javax.transaction.Transactional;
 
 import entity.ToDo;
 
-@Transactional
+@Transactional // means dataBase 
 public class TodoService {
 	
 
 	@PersistenceContext 
-	EntityManager entityManager;
+	EntityManager entityManager; // means the db manager
 	
 	
 	// Inserting 

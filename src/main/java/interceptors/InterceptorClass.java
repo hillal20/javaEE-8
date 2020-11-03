@@ -8,9 +8,9 @@ import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 
-@MyInterceptor // my custom intercepter annotation assigned to this intercepting class 
+@MyInterceptor // my custom intercepter annotation assigned to this intercepting class as a name 
 @Interceptor // telling the cdi container this class is intercepting class that holds the code 
-@Priority(Interceptor.Priority.APPLICATION ) 
+@Priority(Interceptor.Priority.APPLICATION ) // this annotation activate the interceptor 
 public class InterceptorClass {
 	
 	// this class will hold the intercepting code that will run during the interception 
@@ -24,6 +24,8 @@ public class InterceptorClass {
    public Object getInvokation(InvocationContext context ) throws Exception {
 	   
 	   System.out.println(" ====="+ user + " intercepted ======");
+	   
+	   
 	   return context.proceed();
 	  
    }
