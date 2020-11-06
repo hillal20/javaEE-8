@@ -2,13 +2,16 @@ entity\ToDo.class
 scope\ApplicationScopeClass.class
 qualifiers\Salute.class
 rest\ToDoRest.class
+rest\EventRest.class
 service\TodoService.class
 producers\ProcducerClass.class
 qualifiers\Police.class
+events\EventClass.class
 qualifiers\annotations\ServiceMan.class
 producers\HelperClass.class
 qualifiers\Security.class
 rest\ToDoController.class
+events\EventObserver.class
 qualifiers\annotations\Soldier.class
 interceptors\InterceptorClass.class
 scope\ConversationScopeClass.class
