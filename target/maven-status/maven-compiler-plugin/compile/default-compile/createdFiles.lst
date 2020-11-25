@@ -11,11 +11,12 @@ qualifiers\annotations\ServiceMan.class
 producers\HelperClass.class
 qualifiers\Security.class
 rest\ToDoController.class
-events\EventObserver.class
+enums\MyEnum.class
 qualifiers\annotations\Soldier.class
 interceptors\InterceptorClass.class
 scope\ConversationScopeClass.class
 interceptors\MyInterceptor.class
+qualifiers\annotations\PopularStand.class
 qualifiers\annotations\ServiceMan$ServiceType.class
 disposers\DisposersClass.class
 scope\SessionScopeClass.class
@@ -23,4 +24,5 @@ qualifiers\annotations\StereoTypeClass.class
 scope\DependentScopeClass.class
 qualifiers\annotations\Police.class
 scope\RequestScopeClass.class
+events\observers\EventObserver.class
 qualifiers\Soldier.class

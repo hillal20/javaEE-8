@@ -14,11 +14,13 @@ C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\entity\ToDo.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\scope\ConversationScopeClass.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\service\TodoService.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\qualifiers\Police.java
-C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\events\EventObserver.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\qualifiers\Salute.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\scope\DependentScopeClass.java
+C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\enums\MyEnum.java
+C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\qualifiers\annotations\PopularStand.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\disposers\DisposersClass.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\scope\ApplicationScopeClass.java
+C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\events\observers\EventObserver.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\producers\HelperClass.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\rest\EventRest.java
 C:\Users\Ashraf Talukder\Documents\todo-app\src\main\java\qualifiers\annotations\ServiceMan.java
