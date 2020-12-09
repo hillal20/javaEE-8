@@ -19,10 +19,12 @@ interceptors\MyInterceptor.class
 qualifiers\annotations\PopularStand.class
 qualifiers\annotations\ServiceMan$ServiceType.class
 disposers\DisposersClass.class
+derbyDBConnection\DerbyDBConnection.class
 scope\SessionScopeClass.class
 qualifiers\annotations\StereoTypeClass.class
 scope\DependentScopeClass.class
 qualifiers\annotations\Police.class
 scope\RequestScopeClass.class
 events\observers\EventObserver.class
+derbyDBConnection\PersistanceDerbyService.class
 qualifiers\Soldier.class
