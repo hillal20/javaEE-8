@@ -28,7 +28,6 @@ public class Computer  extends CharedFieldsClass{
 	 
 	 
 	 
-	 
 	public String getCompany() {
 		return company;
 	}
