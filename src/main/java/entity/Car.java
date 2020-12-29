@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
@@ -22,6 +24,7 @@ public class Car {
 // if we dont add the table annotation the jpa will ask the db to name as-is 	
 	
 	@Id 
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	Long id; 
 	
 	@JsonbDateFormat(value = "yyyy-MM-dd")
