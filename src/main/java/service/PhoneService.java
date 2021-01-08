@@ -28,7 +28,7 @@ public class PhoneService {
 		public List<Phone> getAllPhones(){
 			
 			 return entityManager
-					 .createQuery("select t from Phone t",Phone.class)
+					 .createQuery("select t from Phone t", Phone.class)
 					 .getResultList();
 		}
 		

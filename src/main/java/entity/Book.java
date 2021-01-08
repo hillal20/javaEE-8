@@ -12,8 +12,27 @@ public class Book  extends CharedFieldsClass{
 	public EmbaddableClass embaddableClass;
 	
 	
+	private String name;
+
+
+	
 	/* an embedded class is a class that has not entity but occupied  a field  in an entity class
 	 * and the jpa will automatically create the embedded columns in the entity table
 	 * */
+	
+	
+	/////////////////////////////////////////////////////////////////////////////////////////
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	
+	
 
 }

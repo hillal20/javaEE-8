@@ -51,14 +51,15 @@
 	 <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		 <class>entity.ToDo</class>
 		 <class>entity.Phone</class>
+		  <class>entity.Book</class>
 		  <exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
-			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
-			<property name="javax.persistence.jdbc.url"    value="jdbc:derby:C:\\MyDerbyDb\\Derby-Db\\MyDb;" />
-			<property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect"/>
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" /> 
+		   <!--  <property name="javax.persistence.jdbc.url"    value="jdbc:derby://localhost:1527/MyDb;create=true" />  -->
+			<!-- <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect"/>
 			<property name="show_sql" value="true"/>
-			<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
-			<property name="javax.persistence.schema-generation.database.action"  value="drop-and-create"/>
+			<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/> -->
+			 <property name="javax.persistence.schema-generation.database.action"  value="drop-and-create"/>
 		</properties>
 	</persistence-unit>
 </persistence>
