@@ -14,10 +14,15 @@ public class DerbyDBConnection {
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
 		
-		  String url = "jdbc:derby:C:\\MyDerbyDb\\Derby-Db\\MyDb;"; Connection conn =
-		  DriverManager.getConnection(url);
-		  System.out.println(" conn successfull =====>"+ conn ); Properties schema =
-		  conn.getClientInfo(); System.out.println("======> "+ schema.isEmpty());
+		  String url = "jdbc:derby:C:\\Derby_DB\\MyDb;"; 
+		  Connection conn =  DriverManager.getConnection(url);
+		  
+		  
+		  System.out.println(" conn successfull =====>"+ conn );
+		  
+		  
+		  Properties schema = conn.getClientInfo();
+		  System.out.println("======> "+ schema.isEmpty());
 		 
 
 		// =============================================================== how to create

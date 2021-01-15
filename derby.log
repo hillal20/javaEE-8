@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Fri Dec 25 18:29:33 CST 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0176-9c73-5706-0000035b67f0 
-on database directory C:\MyDerbyDb\Derby-Db\MyDb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a 
+Thu Jan 14 22:05:35 CST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0177-0438-4e0c-0000035b7ad0 
+on database directory C:\Derby_DB\MyDb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a 
 Loaded from file:/C:/Program%20Files/DERBY/db-derby-10.15.2.0-lib/lib/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=11.0.9+7-LTS

@@ -1,6 +1,7 @@
 package entity;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -20,23 +21,36 @@ public class Employee {
 	 private int age;
  
 	@ManyToOne // this tell JPA  that this class has a ManyToOne relationship with the department entity 
-	@JoinColumn(name="dep_ID") // this will name the foreign key column in the employee table 
+	@JoinColumn(name="department_ID") // this will name the foreign key column in the employee table 
 	private Department department; // the ownership means  who has the foreign key , the employee table will have the foreign key of the department 
 	
 	
 	
-	@OneToOne
+	@OneToOne  // one unique check to one unique employee, only employee know about it 
 	@JoinColumn(name="pay_check_id")
-	private PayCheck payCheck;
+	private PayCheck payCheck; // one direction relationship
 	
 	
-	
+	@OneToOne(mappedBy="employee", fetch = FetchType.LAZY) // refers to the employee instance in the ParkingSpot
+	private ParkingSpot parkingSpot; // the parkingSpot is the owner of the relationship, because the foreign key of employee is located there 
 	
 	
 	
 	
 	////////////////////////////////////////////////////////
 	
+	public PayCheck getPayCheck() {
+		return payCheck;
+	}
+	public void setPayCheck(PayCheck payCheck) {
+		this.payCheck = payCheck;
+	}
+	public ParkingSpot getParkingSpot() {
+		return parkingSpot;
+	}
+	public void setParkingSpot(ParkingSpot parkingSpot) {
+		this.parkingSpot = parkingSpot;
+	}
 	public Department getDepartment() {
 		return department;
 	}

@@ -1,6 +1,7 @@
 package entity;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -19,8 +20,8 @@ public class Department {
 	String name;
 	
 	
-	@OneToMany(mappedBy ="departement")
-	List<Employee> employeesList = new ArrayList<>();
+	@OneToMany(mappedBy ="departement") // the employee owns the relationship because it has the foreign key of the department 
+	Collection<Employee> employeesList = new ArrayList<>();
 	
 	
 	/////////////////////////////////////////////////
@@ -33,7 +34,7 @@ public class Department {
 		this.name = name;
 	}
 
-	public List<Employee> getEmployeesList() {
+	public Collection <Employee> getEmployeesList() {
 		return employeesList;
 	}
 
